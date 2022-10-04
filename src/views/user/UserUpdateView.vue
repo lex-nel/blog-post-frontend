@@ -138,7 +138,7 @@ const handleUpdate = () => {
     </div>
 
     <h2>Posts</h2>
-    <TablePost :posts="user.posts" :loading="loading" />
+    <TablePost ref="tablePostRef" :posts="user.posts" :loading="loading" />
 
     <h2>Comments</h2>
     <TableComment
